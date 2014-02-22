@@ -5,6 +5,8 @@
   "author": "xl1",
   "license": "MIT",
   "dependencies": {
-    "through": "~2.3.4"
+    "through": "~2.3.4",
+    "glsl-tokenizer": "0.0.8",
+    "glsl-parser": "0.0.5"
   }
 }
