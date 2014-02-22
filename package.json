@@ -7,6 +7,8 @@
   "dependencies": {
     "through": "~2.3.4",
     "glsl-tokenizer": "0.0.8",
-    "glsl-parser": "0.0.5"
+    "glsl-parser": "0.0.5",
+    "esprima": "~1.0.4",
+    "uuid": "~1.4.1"
   }
 }
