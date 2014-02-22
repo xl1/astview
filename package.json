@@ -1,0 +1,9 @@
+{
+  "name": "astview",
+  "version": "0.0.0",
+  "description": "AST visualizers",
+  "author": "xl1",
+  "license": "MIT",
+  "dependencies": {
+  }
+}
