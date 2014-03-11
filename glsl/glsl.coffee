@@ -9,7 +9,7 @@ fs.createReadStream "#{__dirname}/source.fs", encoding: 'utf-8'
   .pipe tokenizer()
   .pipe parser()
   .pipe through (node) ->
-    if node.parent and not node.parent.parent
+    if not node.parent
       @queue node
   .pipe tograph __dirname, (node) ->
     if node.type isnt 'placeholder'
