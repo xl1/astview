@@ -8,9 +8,9 @@ transform = (getInfo) -> (program) ->
   walk = ({ id, type, token, children }, path) ->
     path += '/' + id
     result.push "  \"#{path}\" [label = \"#{type}:#{token}\"];"
-    for child in children or []
+    for child, i in children or []
       if childInfo = getInfo child
-        result.push "  \"#{path}\" -> \"#{path}/#{childInfo.id}\";"
+        result.push "  \"#{path}\" -> \"#{path}/#{childInfo.id}\" [label = #{i}];"
         walk childInfo, path
 
   if programInfo = getInfo program
